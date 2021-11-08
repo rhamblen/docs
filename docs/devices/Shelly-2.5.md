@@ -35,6 +35,18 @@ The onboard connector is 1.27mm raster with 1mm diameter holes. Normal Dupont ca
 Otherwise you could simply buy an adapter that converts Dupont to 1.27mm raster at
 [tindie](https://www.tindie.com/products/21512/)
 
+## OTA update
+It is possible to do an OTA update to tasmota software on any shelly device. 
+Visit https://github.com/yaourdt/mgos-to-tasmota for more details.
+
+steps are as follows
+1. Identify your shelly device IP address.
+2. Identify your shelly device model in the table on the github page https://github.com/yaourdt/mgos-to-tasmota.
+3. Add the IP address of the shelly device into the string from the table. ('update URL' column)
+4. Run the modified string in a web browser.  The firmware will update within about 2 minutes.
+5. Connect to the tasmota device directly and enter the correct Wifi SSID and password of the network for the device to connect to.
+6. Modify the configuration and add the template below.
+
 ## Template
 Tasmota 6.5.0.8 and higher supports Shelly 2.5  
 
